@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a8c2da;
+    margin-left: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+    font-size: 55px;
+
+}
+
+
+h2 {
+    color: #bb262669;
+    font-size: 50px;
+}
+
+li {
+    color: chartreuse;
+    font-size: 30px;
+}
