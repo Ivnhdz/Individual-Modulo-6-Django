@@ -17,10 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Pagina1.views import index, usuarios
+from Pagina1.views import index, usuarios, crearFormulario
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('usuarios.html/', usuarios, name='usuarios'),
+    path('formulario.html/', crearFormulario, name='formulario')
 ]
