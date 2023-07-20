@@ -13,5 +13,10 @@ def usuarios(request):
     return render(request, 'usuarios.html', {'users': users})
 
 def crearFormulario(request):
-    form = MiFormulario()
-    return render(request,"formulario.html",{'form':form})
+    if request.method == "POST":
+        form = MiFormulario(request.POST)
+        if form.is_valid():
+            Mensaje = form.save(commit=False)
+            Mensaje.save()
+    formulario_get = MiFormulario()
+    return render(request,"formulario.html",{'form':formulario_get})
